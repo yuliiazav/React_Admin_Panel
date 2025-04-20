@@ -8,6 +8,7 @@ const ThemeToggle = () => {
   return (
     <>
       <Button
+        size="sm"
         className="btn-switcher"
         variant="outlined"
         onClick={() => setMode(mode === "light" ? "dark" : "light")}

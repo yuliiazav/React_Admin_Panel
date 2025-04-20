@@ -11,7 +11,6 @@ body {
   font-size: 20px;
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
-  /* overflow: hidden; */
   background: radial-gradient(#414ebd, transparent);
   min-height: 100vh;
   min-width: 320px;
@@ -59,13 +58,12 @@ td {
 }
 .links button {
   font-size: 20px;
-  padding: 15px 30px;
   min-width: 220px;
   min-height: 50px;
 }
 .greeting-text {
   color: #0b6bcb;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 900;
   letter-spacing: 2px;
   margin: 0;
@@ -95,13 +93,13 @@ td {
   position: relative;
   text-align: right;
   width: 160px;
-  height: 50px;
+  height: 30px;
 }
 
 .btn-switcher::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 6px;
   left: 10px;
   width: 20px;
   height: 20px;
@@ -339,8 +337,8 @@ tbody {
     margin-bottom: 15px;
     border: 1px solid #1932bc;
     border-radius: 10px;
+    padding: 15px 0;
   }
-
   td {
     text-align: left !important;
     position: relative;

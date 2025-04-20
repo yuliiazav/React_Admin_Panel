@@ -127,7 +127,7 @@ const Users = () => {
               hoverRow
               className="hide-id-mobile"
               stickyHeader
-              size="md"
+              size="sm"
               borderAxis="both"
               aria-label="basic table"
               sx={{
@@ -200,7 +200,7 @@ const Users = () => {
                 <Button
                   onClick={openCreateUserModal}
                   variant="outlined"
-                  size="lg"
+                  size="sm"
                 >
                   Create a new user
                 </Button>

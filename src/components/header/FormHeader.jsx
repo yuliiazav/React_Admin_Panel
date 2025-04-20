@@ -12,7 +12,7 @@ const FormHeader = ({ currentUser, onLogout }) => {
       <div className="header__btn">
         <ThemeToggle />
         {currentUser && (
-          <Button color="neutral" onClick={onLogout} size="lg" variant="soft">
+          <Button color="neutral" onClick={onLogout} size="sm" variant="soft">
             Log Out
           </Button>
         )}

@@ -10,7 +10,7 @@ const UsersHeader = ({ currentUser, onLogout }) => {
           className="logOut-btn"
           color="neutral"
           onClick={onLogout}
-          size="lg"
+          size="sm"
           variant="soft"
         >
           Log Out
