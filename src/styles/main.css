@@ -358,15 +358,19 @@ td:nth-child(2) {
     min-height: max-content;
     font-size: 15px;
   }
-  .user-table tbody {
+  /* .user-table tbody {
     height: auto;
+  } */
+  .editable-mode-tr td {
+    padding: 5px;
   }
-
+  .editable-mode-tr td:before {
+    display: none;
+  }
   tr {
     margin-bottom: 15px;
     border: 1px solid #1932bc;
     border-radius: 10px;
-    padding: 15px 0;
   }
   td {
     text-align: left !important;

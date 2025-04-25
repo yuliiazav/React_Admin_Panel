@@ -85,8 +85,8 @@ const User = () => {
 
                 "--Table-headerUnderlineThickness": "10px",
                 "--TableCell-height": "40px",
-                "--TableCell-paddingX": "15px",
-                "--TableCell-paddingY": "15px",
+                "--TableCell-paddingX": "10px",
+                "--TableCell-paddingY": "10px",
               }}
             >
               <thead>
@@ -100,10 +100,11 @@ const User = () => {
               </thead>
               <tbody>
                 {isEditableMode ? (
-                  <tr>
+                  <tr className="editable-mode-tr">
                     <td>{editableUser.id}</td>
                     <td>
                       <Input
+                        size="sm"
                         value={editableUser.name}
                         onChange={(e) =>
                           onChangeHandler(e.target.value, "name")
@@ -112,6 +113,7 @@ const User = () => {
                     </td>
                     <td>
                       <Input
+                        size="sm"
                         value={editableUser.pass}
                         onChange={(e) =>
                           onChangeHandler(e.target.value, "pass")
@@ -120,6 +122,7 @@ const User = () => {
                     </td>
                     <td>
                       <Input
+                        size="sm"
                         value={editableUser.email}
                         onChange={(e) =>
                           onChangeHandler(e.target.value, "email")
