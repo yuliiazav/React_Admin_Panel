@@ -158,9 +158,6 @@ td {
 table {
   margin-bottom: 20px;
 }
-/* tbody {
-  height: 350px;
-} */
 
 th:nth-child(2),
 td:nth-child(2) {
@@ -168,9 +165,7 @@ td:nth-child(2) {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* .user-table tbody {
-  height: 150px;
-} */
+
 .pagination {
   display: flex;
   gap: 10px;
@@ -358,9 +353,7 @@ td:nth-child(2) {
     min-height: max-content;
     font-size: 15px;
   }
-  /* .user-table tbody {
-    height: auto;
-  } */
+
   .editable-mode-tr td {
     padding: 5px;
   }

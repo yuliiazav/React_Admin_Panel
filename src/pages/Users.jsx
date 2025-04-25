@@ -136,7 +136,7 @@ const Users = () => {
                 "& thead th:nth-child(6)": { width: "10%" },
                 "& thead th:nth-child(7)": { width: "10%" },
                 "--Table-headerUnderlineThickness": "10px",
-                "--TableCell-height": "40px",
+                "--TableCell-height": "60px",
                 "--TableCell-paddingX": "10px",
                 "--TableCell-paddingY": "10px",
               }}

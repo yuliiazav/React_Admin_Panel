@@ -84,7 +84,7 @@ const User = () => {
                 "& thead th:nth-child(5)": { width: "15%" },
 
                 "--Table-headerUnderlineThickness": "10px",
-                "--TableCell-height": "40px",
+                "--TableCell-height": "60px",
                 "--TableCell-paddingX": "10px",
                 "--TableCell-paddingY": "10px",
               }}
