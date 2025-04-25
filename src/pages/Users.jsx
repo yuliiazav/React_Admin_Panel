@@ -132,11 +132,11 @@ const Users = () => {
               aria-label="basic table"
               sx={{
                 "& thead th:nth-child(1)": { width: "5%" },
-                "& thead th:nth-child(2)": { width: "20%" },
+                "& thead th:nth-child(2)": { width: "10%" },
                 "& thead th:nth-child(6)": { width: "10%" },
-                "& thead th:nth-child(7)": { width: "8%" },
+                "& thead th:nth-child(7)": { width: "10%" },
                 "--Table-headerUnderlineThickness": "10px",
-                "--TableCell-height": "30px",
+                "--TableCell-height": "20px",
                 "--TableCell-paddingX": "10px",
                 "--TableCell-paddingY": "10px",
               }}

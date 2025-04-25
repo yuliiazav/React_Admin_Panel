@@ -75,8 +75,8 @@ const User = () => {
           <UsersHeader currentUser={currentUser} onLogout={handleLogout} />
           <div className="main">
             <Table
-              hoverRow
-              size="lg"
+              className="user-table"
+              size="md"
               borderAxis="both"
               aria-label="basic table"
               sx={{
@@ -84,7 +84,7 @@ const User = () => {
                 "& thead th:nth-child(5)": { width: "15%" },
 
                 "--Table-headerUnderlineThickness": "10px",
-                "--TableCell-height": "50px",
+                "--TableCell-height": "40px",
                 "--TableCell-paddingX": "15px",
                 "--TableCell-paddingY": "15px",
               }}
@@ -168,7 +168,7 @@ const User = () => {
               </Button>
             </div>
             <div className="links">
-              <Button onClick={openCreateUserModal} variant="soft" size="lg">
+              <Button onClick={openCreateUserModal} variant="soft" size="sm">
                 Create a new user
               </Button>
             </div>

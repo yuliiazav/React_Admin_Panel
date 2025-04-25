@@ -7,7 +7,7 @@ const PageContainer = ({ children }) => {
       sx={{
         bgcolor: (theme) => theme.vars.palette.background.body,
         color: "text.primary",
-        // borderRadius: "25px",
+        borderRadius: "3px",
         boxShadow: "lg",
         padding: 2,
         xs: {

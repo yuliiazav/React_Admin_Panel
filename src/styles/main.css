@@ -58,8 +58,8 @@ td {
 }
 .links button {
   font-size: 20px;
-  min-width: 220px;
-  min-height: 50px;
+  min-width: 190px;
+  min-height: 40px;
 }
 .greeting-text {
   color: #0b6bcb;
@@ -114,23 +114,30 @@ td {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 10px;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 50px 100px;
-  border: 2px solid #b0cfee;
+  padding: 25px;
+  border: 1px solid #12467b7d;
   border-radius: 35px;
+}
+.form-main {
+  width: 80%;
+  margin: 0 auto;
 }
 .auth-container {
   min-height: 85vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 100px;
-  gap: 50px;
+  padding: 35px 100px 15px;
+  gap: 20px;
+  border: 2px solid #b0cfeeaa;
+  border-radius: 25px;
 }
 .logOut-btn {
   align-self: end;
@@ -153,6 +160,15 @@ table {
 tbody {
   height: 350px;
 }
+th:nth-child(2),
+td:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.user-table tbody {
+  height: 150px;
+}
 .pagination {
   display: flex;
   gap: 10px;
@@ -160,7 +176,6 @@ tbody {
 }
 
 .pagination button {
-  padding: 8px 12px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -192,13 +207,13 @@ tbody {
   padding: 5px;
 }
 .form-footer {
-  padding: 20px;
+  padding: 20px 20px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #999;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 @media (max-width: 1024px) {
   .form-container,
@@ -209,7 +224,9 @@ tbody {
   .greeting-text {
     font-size: 32px;
   }
-
+  .edit-btns {
+    flex-direction: column;
+  }
   .greeting-text span {
     font-size: 20px;
   }
@@ -285,6 +302,9 @@ tbody {
     width: 120px;
     height: 40px;
   }
+  .edit-btns {
+    flex-direction: row;
+  }
   .links button {
     font-size: 14px;
     min-width: 140px;
@@ -335,6 +355,9 @@ tbody {
     overflow: hidden;
     min-height: max-content;
     font-size: 15px;
+  }
+  .user-table tbody {
+    height: auto;
   }
 
   tr {
