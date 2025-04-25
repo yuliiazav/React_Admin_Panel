@@ -116,7 +116,7 @@ const CreateUserModal = ({ onDestroy, onCreateSuccess, onCreateError }) => {
             )}
           />
 
-          <Button type="submit" variant="solid">
+          <Button className="btn-submit" type="submit" variant="solid">
             Submit
           </Button>
         </form>

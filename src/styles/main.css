@@ -95,7 +95,9 @@ td {
   width: 160px;
   height: 30px;
 }
-
+.btn-submit {
+  font-size: 20px;
+}
 .btn-switcher::before {
   content: "";
   position: absolute;
@@ -194,6 +196,9 @@ tbody {
   text-align: center;
   font-size: 14px;
   color: #999;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 @media (max-width: 1024px) {
   .form-container,
@@ -254,7 +259,6 @@ tbody {
 
   .greeting-text {
     font-size: 30px;
-    text-align: center;
     color: #297fd5;
   }
 

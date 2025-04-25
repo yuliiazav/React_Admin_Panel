@@ -7,7 +7,7 @@ export default function RemoveUserModal({ onDestroy, onConfirm }) {
         <i className="close" onClick={onDestroy}>
           X
         </i>
-        <h2>Please confirm you want to delete this user?</h2>
+        <h2>Delete this user ?</h2>
         <div className="btns">
           <button className="accept" onClick={onConfirm}>
             Yes, delete user

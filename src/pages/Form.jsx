@@ -193,7 +193,12 @@ const Form = () => {
                               {errors.email.message}
                             </span>
                           )}
-                          <Button type="submit" variant="solid" size="lg">
+                          <Button
+                            className="btn-submit"
+                            type="submit"
+                            variant="solid"
+                            size="lg"
+                          >
                             Submit
                           </Button>
                         </>
