@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
   border: 0;
@@ -91,7 +91,244 @@ h6 {
   user-select: none;
 }
 
+--------------------*/
+/* html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} */
+/* Загальне скидання */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Box-sizing для всіх елементів */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Видалення outline при фокусі та активності */
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/* Блокове відображення семантичних елементів */
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/* Базові стилі html та body */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Запобігання автоматичному збільшенню шрифту при торканні на iOS */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Успадкування шрифту для форм */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* Приховування очищення для input в IE */
+input::-ms-clear {
+  display: none;
+}
+
+/* Курсор для кнопок */
+button {
+  cursor: pointer;
+}
+
+/* Скидання внутрішніх відступів кнопок у Firefox */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* Стилі для посилань */
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Скидання стилів списків */
+ul li {
+  list-style: none;
+}
+
+/* Вертикальне вирівнювання зображень */
+img {
+  vertical-align: top;
+  /* Запобігання появі зайвого простору під зображеннями в деяких випадках */
+  -webkit-backface-visibility: hidden;
+}
+
+/* Скидання розміру та жирності заголовків */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Заборона виділення тексту користувачем (коментувати або видалити, якщо потрібно виділення) */
+/* * {
+  user-select: none;
+} */
+
 /*--------------------*/
+/* Додаткове скидання для більшої кількості HTML5 елементів */
 html,
 body,
 div,
@@ -180,7 +417,8 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
+/* HTML5 display-role reset для старих браузерів */
 article,
 aside,
 details,
@@ -194,17 +432,23 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
+  /* Увімкнення плавної прокрутки для WebKit */
+  -webkit-overflow-scrolling: touch;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -212,7 +456,49 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Додаткові налаштування, специфічні для WebKit (Safari/iOS/деякі Android) */
+
+/* Запобігання виділенню номерів телефонів як посилань (може бути небажаним) */
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Покращення рендерингу субпікселів для WebKit */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Запобігання появі сірої обводки навколо торкнутих елементів на iOS */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Забезпечення коректного відображення SVG як фонових зображень (може знадобитися для певних випадків) */
+/* html {
+  -webkit-transform: translate3d(0, 0, 0);
+} */
+
+/* Додаткові стилі для елементів форм (можуть бути налаштовані далі) */
+input[type="search"] {
+  -webkit-appearance: none; /* Видалення стандартних стилів пошукового поля */
+}
+
+button {
+  -webkit-appearance: none; /* Видалення стандартних стилів кнопок */
+}
+
+select {
+  -webkit-appearance: none; /* Видалення стандартних стилів випадаючих списків */
+  /* Додайте власні стилі для оформлення випадаючих списків */
+}
+
+textarea {
+  -webkit-appearance: none; /* Видалення стандартних стилів текстових областей */
 }
