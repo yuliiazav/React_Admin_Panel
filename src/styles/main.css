@@ -33,6 +33,7 @@ th,
 td {
   text-align: center !important;
   overflow: overlay;
+  vertical-align: middle;
 }
 .page {
   width: 100%;
@@ -157,18 +158,19 @@ td {
 table {
   margin-bottom: 20px;
 }
-tbody {
+/* tbody {
   height: 350px;
-}
+} */
+
 th:nth-child(2),
 td:nth-child(2) {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.user-table tbody {
+/* .user-table tbody {
   height: 150px;
-}
+} */
 .pagination {
   display: flex;
   gap: 10px;
